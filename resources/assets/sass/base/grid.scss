@@ -1,0 +1,65 @@
+$gutter-width: 32px;
+$outer-margin: 24px;
+
+$half-gutter-width: $gutter-width *.5;
+
+$baseWidth: 4.166667%;
+
+.container {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 0 -#{$half-gutter-width}
+}
+
+.no-gutter {
+    margin-left: 0;
+}
+
+@for $i from 1 through 24 {
+    .col-#{$i}, .col-offset-#{$i} {
+        flex: 0 0 auto;
+        padding-left: $half-gutter-width;
+        .no-gutter {
+            padding-left: 0;
+        }
+    }
+}
+
+@for $i from 1 through 24 {
+    .col-#{$i} {
+        flex-basis: $baseWidth * $i;
+        max-width: $baseWidth * $i;
+    }
+    .col-offset-#{$i} {
+        margin-left: $baseWidth * $i;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-center {
+    justify-content: flex-center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-between {
+    justify-content: space-between;
+}

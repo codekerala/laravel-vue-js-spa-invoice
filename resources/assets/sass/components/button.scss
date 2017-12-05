@@ -1,0 +1,56 @@
+.btn {
+    border: none;
+    border-radius: $border-radius;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 8px 16px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+    background: $color-grey;
+    box-shadow: 0 1px darken($color-grey, 10%);
+    &:focus {
+        outline-style: dotted;
+        outline-width: 1px;
+        outline-offset: 1px;
+    }
+    &:active {
+        box-shadow: $box-shadow;
+    }
+    &[disabled] {
+        opacity: 0.75;
+        cursor: not-allowed;
+    }
+}
+
+a.btn {
+    color: $text-color;
+    text-decoration: none;
+}
+
+a.btn-primary {
+    color: #fff;
+}
+
+.btn-primary {
+    background: $color-primary;
+    color: #fff;
+    box-shadow: 0 1px darken($color-primary, 15%);
+}
+
+.btn-error {
+    background: $color-error;
+    color: #fff;
+    box-shadow: 0 1px darken($color-error, 15%);
+}
+
+.btn-success {
+    background: $color-success;
+    color: #fff;
+    box-shadow: 0 1px darken($color-success, 15%);
+}
+
+.btn-sm {
+    padding: 4px 8px;
+}

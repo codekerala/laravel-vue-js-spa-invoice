@@ -1,0 +1,71 @@
+.typeahead {
+    position: relative;
+    display: block;
+    background: #fff;
+    &-open {
+        border-bottom: 0;
+        .form-control {
+            background: #fff;
+            box-shadow: $box-shadow;
+            border: 1px solid $border-color;
+        }
+    }
+    &-inner {
+        position: relative;
+    }
+    &-selected {
+        cursor: pointer;
+        user-select: none;
+        display: flex!important;
+        justify-content: space-between;
+        line-height: 15px;
+    }
+    &-dropdown {
+        width: 100%;
+        position: absolute;
+        z-index: 45;
+        padding: 5px;
+        background: #fff;
+        border-right: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+        box-shadow: $box-shadow;
+    }
+    &-input {
+        line-height: 13px;
+        font-size: 13px;
+        background: #fafafa;
+        border: none;
+        border-radius: 1px;
+        box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        padding: 4px 8px;
+        width: 100%;
+        display: block;
+        &:focus {
+            outline-style: dotted;
+            outline-width: 1px;
+            outline-offset: 1px;
+        }
+    }
+    &-input_wrap {
+        position: relative;
+    }
+    &-list {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    &-item {
+        display: block;
+        margin-bottom: 1px
+    }
+    &-link {
+        cursor: pointer;
+        display: block;
+        padding: 2px;
+        background: #fff;
+    }
+    &-active {
+        background: $color-primary!important;
+        color: #fff;
+    }
+}

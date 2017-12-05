@@ -1,0 +1,7 @@
+$baseWidth: 4.166667%;
+
+@for $i from 1 through 24 {
+    .w-#{$i} {
+        width: $baseWidth * $i;
+    }
+}

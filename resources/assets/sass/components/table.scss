@@ -1,0 +1,32 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        tr {
+            border-bottom: 2px solid $border-color;
+            th {
+                text-align: left;
+                padding: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-top: 1px solid $border-color;
+            td {
+                vertical-align: top;
+                padding: 5px;
+            }
+            &:nth-of-type(odd) {
+                background: #fcfcfc;
+            }
+        }
+    }
+}
+
+.table-link {
+    td {
+        cursor: pointer;
+    }
+}

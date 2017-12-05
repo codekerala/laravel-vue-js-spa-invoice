@@ -1,0 +1,74 @@
+.form {
+    &-group {
+        padding: 0 0 8px 0;
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            small {
+                font-weight: normal;
+            }
+        }
+    }
+    &-control {
+        color: $text-color;
+        line-height: 13px;
+        font-size: 13px;
+        height: 32px;
+        background: #fafafa;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+        border-radius: 1px;
+        box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        padding: 8px;
+        width: 100%;
+        display: block;
+        &:focus {
+            outline-style: dotted;
+            outline-width: 1px;
+            outline-offset: 1px;
+        }
+        &[disabled] {
+            opacity: 0.75px;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.error-control {
+    display: block;
+    color: $color-error;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    th {
+        text-align: left;
+        padding: 5px;
+        font-weight: bold;
+    }
+    td {
+        vertical-align: top;
+        padding: 5px;
+    }
+}
+
+.form-summary {
+    text-align: right;
+    vertical-align: middle!important;
+    font-weight: bold;
+}
+
+.form-remove {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: $color-error;
+}
+
+textarea.form-control {
+    height: 102px;
+}
