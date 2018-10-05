@@ -29,8 +29,6 @@
 
 Find the link for paid full source code from codecanyon.
 
-Find the link for paid full source code from codecanyon.
-
 [Flow Demo](https://flow.codekerala.com)
 
 [Buy Flow Now](https://codecanyon.net/item/flow-simple-crm-for-freelancers-and-small-businesses/22641018)
