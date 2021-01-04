@@ -14,7 +14,7 @@
         "laravel-mix": "^1.0"
     },
     "dependencies": {
-        "axios": "^0.17.1",
+        "axios": "^0.21.1",
         "cross-env": "^5.1",
         "laravel-mix": "^1.0",
         "vue": "^2.5.9",
