@@ -11,12 +11,12 @@
     },
     "devDependencies": {
         "cross-env": "^5.1",
-        "laravel-mix": "^1.0"
+        "laravel-mix": "^6.0"
     },
     "dependencies": {
         "axios": "^0.17.1",
         "cross-env": "^5.1",
-        "laravel-mix": "^1.0",
+        "laravel-mix": "^6.0",
         "vue": "^2.5.9",
         "vue-router": "^3.0.1"
     }
